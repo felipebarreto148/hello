@@ -1,28 +1,28 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <!-- eslint-disable -->
+  <main id="app">
+    <a-config-provider>
+      <a-button>Teste</a-button>
+    </a-config-provider>
+  </main>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+/* eslint-disable */
+import { Button as AButton, ConfigProvider as AConfigProvider } from "ant-design-vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    AButton,
+    AConfigProvider
   },
 };
 </script>
 
-<style>
+<style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  gap: 50px;
 }
 </style>
